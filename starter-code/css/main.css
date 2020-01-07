@@ -3,44 +3,103 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+*{
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
-.mobile{
-  width: 250px;
-  height: 500px;
-  display: block;
-  margin-left: 10%;
-  float: left;
+html{
+  background-image: url(../images/bgtile.png);
+  background-repeat: repeat-x;
+}
+section{
+  display:flex;
+  justify-content: space-between;
 }
 
-.insta{
-  width: 460px;
-  height: 180px;
-  display: block;
-  margin-left: 12%;
-  float: left;
+.flex{
+  display:inline-flex;
+  justify-content: space-between;
+  margin: 100px 100px 70px 200px;
 }
 
-.login{
-  width: 130px;
-    height: 59px;
-    display: block;
-    margin-left: 1%;
-    float: left;
+
+
+h2{
+  color:#06365f;
+
 }
 
-.global{
-  background: white;
-    margin-top: 10%;
+p{
+  text-align: left;
 }
 
-.loginBtn{
-  background: url(images/home.png) no-repeat;
-  width: 100%;
-    height: 100%;
-    background-color: steelblue;
+.phone{
+  width: 50%;
+}
+
+.sec-right{
+  margin-left:50px;
+}
+
+.encabezado{
+  display: flex;
+  justify-content: space-between;
+}
+
+.encabezado div img{
+  height: 30px;
+}
+
+
+.background{
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  padding: 40px;
+  padding-right: 60px;
+}
+
+.fondo p {
+  margin-top:10px ;
+}
+
+.links img{
+  margin-left:20px;
+  padding:20px;
+}
+
+footer{
+  margin:0 400px;
+  font-size: 13px;
+  padding-right: 130px;
+  
+}
+
+footer ul{
+  display:flex;
+  list-style-type: none;
+  color:#3377af;
+  text-transform: uppercase ;
+  justify-content: space-around;
+  font-weight: bold;
+
+}
+
+footer ul li a{
+  text-decoration:none;
+}
+
+.copy{
+  color:grey;
+}
+.ColButt{
+    background-color:#3377af;
+    width: 100px;
+    height: -webkit-fill-available;
+    margin-top: 30px;
 }
